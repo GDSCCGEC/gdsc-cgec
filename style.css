@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poor+Story&family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .navbar-nav li{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.3rem;
+}
+
+.navbar .navbar-nav li a{
+    color: #fbbc04;
+    font-family: 'Poppins',sans-serif;
+}
+
+.content{
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    animation: gdsc 3s linear infinite;
+}
+
+.hero h2{
+    font-family: 'Poor Story',cursive;
+    color: #fff;
+    margin-top: -7rem; 
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+/* @keyframes gdsc {
+    0%{
+        top:50%
+    }
+    50%{
+        top: 40%;
+    }
+    100%{
+        top:50%
+    }
+} */
+
+.content h1 #s1{
+    font-size: 7rem;
+    color: #4285f4;
+    font-weight: 600;
+}
+.content h1 #s2{
+    font-size: 7rem;
+    color: #ea4335;
+    font-weight: 600;
+}
+.content h1 #s3{
+    font-size: 7rem;
+    color: #fbbc04;
+    font-weight: 600;
+}
+.content h1 #s4{
+    font-size: 7rem;
+    color: #34a853;
+    font-weight: 600;
+    padding-right: 1rem;
+}
+
+
+
+.content h1 #s5{
+    font-size: 6.7rem;
+    color: #4285f4;
+    font-weight: 600;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.15rem;
+}
+.content h1 #s6{
+    font-size: 6.7rem;
+    color: #ea4335;
+    font-weight: 600;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.15rem;
+}
+.content h1 #s7{
+    font-size: 6.7rem;
+    color: #fbbc04;
+    font-weight: 600;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.15rem;
+}
+.content h1 #s8{
+    font-size: 6.7rem;
+    color: #34a853;
+    font-weight: 600;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.15rem;
+}
+
+.content button{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2rem;
+    font-family: 'Poppins',sans-serif;
+    background-color: #4285f4;
+    border: 3px solid #4285f4;
+    padding: 0.5rem 5.5rem;
+    border-radius: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+}
+
+.content button:hover{
+    background-color: transparent;
+}
+
+.content a button{
+    color: #fff;
+}
+
+.back_vd{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+#divider{
+    background-color: #4285f4;
+    color: #fff;
+    margin-bottom: 5rem;
+}
+
+lottie-player .animation{
+    width: 300px;
+    height: 300px;
+}
+
+.about .about_text h3{
+    /* font-weight: 600; */
+    font-size: 1.8rem;
+    color: #34a853;
+}
+
+.about .about_text h5{
+    font-family: 'Poppins',sans-serif;
+    color: #505050;
+    font-size: 1.05rem;
+    margin-top: 1rem;
+    margin-bottom: 1.4rem;
+    line-height: 1.5rem;
+}
+
+.about button{
+    padding: 0.3rem 3rem;
+    border-radius: 10px;
+    background-color: #5865F2;
+    color: white;
+    border: none;
+    margin-bottom: 3rem;
+    cursor: pointer;
+}
+
+.about a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.whyjoinus{
+    background-color: #def6ff;
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+.whyjoinus h3{
+    font-size: 2.2rem;
+    color: #2b2b2b;
+    text-align: center;
+    margin-bottom: 0.7rem;
+    font-family: 'Poor Story',cursive;
+}
+
+.whyjoinus .col-md-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whyjoinus .card{
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    height: 34rem;
+    border-radius: 15px;
+    border: none;
+    transition-property: margin-top;
+    transition-duration: 0.25s;
+}
+
+.whyjoinus .card:hover{
+    margin-top: 0;
+}
+
+.whyjoinus .card h5{
+    margin-top: 0.5rem;
+    margin-bottom: 1.4rem;
+}
+
+.whyjoinus .card img{
+    height: 11rem;
+    width: 11rem;
+    margin-bottom: 0.7rem;
+}
+
+.whyjoinus .card p{
+    font-family: 'Poppins',sans-serif;
+    font-size: 0.9rem;
+}
+
+.sponsor h3{
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-family: 'Poor Story',cursive;
+    font-size: 2rem;
+}
+
+@media (min-aspect-ratio: 16/9){
+    .back_vd{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .back_vd{
+        width: auto;
+        height: auto;
+    }
+    .hero h2{
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+    .content h1 #s1{
+        font-size: 5rem;
+    }
+    .content h1 #s2{
+        font-size: 5rem;
+    }
+    .content h1 #s3{
+        font-size: 5rem;
+    }
+    .content h1 #s4{
+        font-size: 5rem;
+        padding-right: 0;
+    }
+    .content h1 #s5{
+        font-size: 5rem;
+        -webkit-text-stroke-width: 0.1rem;
+    }
+    .content h1 #s6{
+        font-size: 5rem;
+        -webkit-text-stroke-width: 0.1rem;
+    }
+    .content h1 #s7{
+        font-size: 5rem;
+        -webkit-text-stroke-width: 0.1rem;
+    }
+    .content h1 #s8{
+        font-size: 5rem;
+        -webkit-text-stroke-width: 0.1rem;
+    }
+    .content button{
+        padding: 0.3rem 3.5rem;
+    }
+
+    .about .about_text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+}
