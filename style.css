@@ -24,8 +24,25 @@
 }
 
 .navbar .navbar-nav li a{
-    color: #fbbc04;
     font-family: 'Poppins',sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.navbar #home-nav{
+    color: #ffd967;
+}
+.navbar #about-nav{
+    color: #ffd967;
+}
+.navbar #events-nav{
+    color: #ffd967;
+}
+.navbar #team-nav{
+    color: #ffd967;
+}
+.navbar #contact-nav{
+    color: #ffd967;
 }
 
 .content{
@@ -237,6 +254,21 @@ lottie-player .animation{
     margin-bottom: 2rem;
     font-family: 'Poor Story',cursive;
     font-size: 2rem;
+}
+
+.faq{
+    margin-top: 7rem;
+    margin-bottom: 4rem;
+}
+
+.faq h3{
+    font-family: 'Poor Story',cursive;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.faq .colorG{
+    background-color: #4285f4;
 }
 
 @media (min-aspect-ratio: 16/9){
