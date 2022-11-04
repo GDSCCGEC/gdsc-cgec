@@ -1,1 +1,1 @@
-GDSC-CGEC
+GDSC CGEC Website
