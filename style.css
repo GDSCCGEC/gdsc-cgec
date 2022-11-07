@@ -29,6 +29,13 @@
     font-weight: 500;
 }
 
+/*navbar hover */
+a:hover{
+   
+    transform: scale(1.54);
+}
+
+
 .navbar #home-nav{
     color: #ffd967;
 }
