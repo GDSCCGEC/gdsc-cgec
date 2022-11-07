@@ -27,12 +27,14 @@
     font-family: 'Poppins',sans-serif;
     font-size: 1.2rem;
     font-weight: 500;
+    transition-property: transform;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
 }
 
 /*navbar hover */
-a:hover{
-   
-    transform: scale(1.54);
+.navbar .navbar-nav li a:hover{
+    transform: scale(1.25);
 }
 
 
@@ -333,6 +335,19 @@ lottie-player .animation{
         justify-content: center;
         text-align: center;
     }
+
+    .footer .col-md-3{
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .footer .col-md-5 h5{
+        font-size: 14px;
+    }
+    .footer .col-md-5 h6{
+        font-size: 12px;
+        margin-bottom: 2rem;
+    }
 }
 
 /*footer*/
@@ -342,20 +357,7 @@ lottie-player .animation{
     padding-right:90px;
     
 }
-.club p{
-    font-family: 'Poppins', sans-serif;
-    padding-left:2rem;
-}
 
-
-.container{
-	max-width: 1170px;
-	margin:auto;
-}
-.row{
-	display: flex;
-	flex-wrap: wrap;
-}
 ul{
 	list-style: none;
 }
@@ -368,7 +370,7 @@ ul{
    padding: 0 15px;
 }
 
-.footer-col h4{
+.footer h4{
 	font-size: 18px;
 	color: #ffffff;
 	text-transform: capitalize;
@@ -376,7 +378,7 @@ ul{
 	font-weight: 500;
 	position: relative;
 }
-.footer-col h4::before{
+.footer h4::before{
 	content: '';
 	position: absolute;
 	left:0;
@@ -387,10 +389,10 @@ ul{
 	width: 50px;
 }
 
-.footer-col ul li:not(:last-child){
+.footer ul li:not(:last-child){
 	margin-bottom: 10px;
 }
-.footer-col ul li a{
+.footer ul li a{
 	font-size: 1rem;
 	text-transform: capitalize;
 	color: #ffffff;
@@ -399,12 +401,13 @@ ul{
 	color: #bbbbbb;
 	display: block;
 	transition: all 0.3s ease;
+    /* padding-left: 2rem; */
 }
-.footer-col ul li a:hover{
+.footer ul li a:hover{
 	color: #ffffff;
 	/* padding-left: 8px; */
 }
-.footer-col .social-links a{
+.footer .social-links a{
 	display: inline-block;
 	height: 40px;
 	width: 40px;
@@ -416,11 +419,11 @@ ul{
 	color: #ffffff;
 	transition: all 0.5s ease;
 }
-.footer-col .social-links a:hover{
+.footer .social-links a:hover{
 	color: #24262b;
 	background-color: #ffffff;
 }
-.footer-col button{
+.footer button{
     padding: 0.2rem 2.5rem;
     border-radius: 10px;
     background-color: #5865F2;
@@ -437,15 +440,3 @@ ul{
     font-size: 1.3rem;
 }
 
-/*responsive*/
-@media(max-width: 767px){
-  .footer-col{
-    width: 50%;
-    margin-bottom: 30px;
-}
-}
-@media(max-width: 574px){
-  .footer-col{
-    width: 100%;
-}
-}
