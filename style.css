@@ -332,13 +332,12 @@ lottie-player .animation{
 
 
 .club{
-    padding-right:100px;
+    padding-right:90px;
     
 }
 .club p{
     font-family: 'Poppins', sans-serif;
-    padding-left:90px;
-    
+    padding-left:2rem;
 }
 
 
@@ -355,12 +354,13 @@ ul{
 }
 .footer{
 	background-color: #24262b;
-    padding: 70px 0;
+    padding: 2.2rem 0;
 }
 .footer-col{
    width: 25%;
    padding: 0 15px;
 }
+
 .footer-col h4{
 	font-size: 18px;
 	color: #ffffff;
@@ -384,7 +384,7 @@ ul{
 	margin-bottom: 10px;
 }
 .footer-col ul li a{
-	font-size: 16px;
+	font-size: 1rem;
 	text-transform: capitalize;
 	color: #ffffff;
 	text-decoration: none;
@@ -395,7 +395,7 @@ ul{
 }
 .footer-col ul li a:hover{
 	color: #ffffff;
-	padding-left: 8px;
+	/* padding-left: 8px; */
 }
 .footer-col .social-links a{
 	display: inline-block;
@@ -414,7 +414,7 @@ ul{
 	background-color: #ffffff;
 }
 .footer-col button{
-    padding: 0.3rem 3rem;
+    padding: 0.2rem 2.5rem;
     border-radius: 10px;
     background-color: #5865F2;
     color: white;
@@ -422,6 +422,13 @@ ul{
     margin-bottom: 3rem;
     cursor: pointer;
 } 
+
+.footer a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 1.3rem;
+}
 
 /*responsive*/
 @media(max-width: 767px){
