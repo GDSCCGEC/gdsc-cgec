@@ -33,6 +33,9 @@
         <div id="status">&nbsp;</div>
     </div>
 
+    <!-- bottom to top button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up"></i></button>
+
     <!-- Starting Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
         <div class="container">
@@ -225,11 +228,33 @@
 
     <!-- js -->
     <script>
+        // preloader
         $(window).on('load', function() { // makes sure the whole site is loaded 
             $('#status').fadeOut(); // will first fade out the loading animation 
             $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
             $('body').delay(350).css({'overflow':'visible'});
         })
+
+
+        // Get the button:
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
     </script>
 </body>
 </html>

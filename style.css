@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-/* Preloader */
+/* Preloader style start*/
 
 #preloader {
     position: fixed;
@@ -36,6 +36,34 @@
     margin: 0 0;
     /* is width and height divided by two */
   }
+
+  /* preloader style end */
+
+
+
+  /* bottom to top button style  */
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #fbbc04; /* Set a background color */
+    color: #505050; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 0 15px; /* Some padding */
+    border-radius: 50%; /* Rounded corners */
+    font-size: 35px; /* Increase font size */
+    font-weight:bolder;
+  }
+  
+  #myBtn:hover {
+    background-color: #afccfc; /* Add a dark-grey background on hover */
+  }
+
+  
 
 .hero{
     width: 100%;
