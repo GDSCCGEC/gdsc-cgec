@@ -6,13 +6,6 @@
     box-sizing: border-box;
 }
 
-/* body {
-    background-image: url("https://i.postimg.cc/Y0dc64RW/background.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-} */
-  
-
 .navbar{
     background-color: #fff;
 }
@@ -56,95 +49,26 @@
     letter-spacing: 4px;
 }
 
-/* cards */
-.card-grid{
-    display: flex; 
-    justify-content: center; 
-    text-align:center; 
-    /* position:relative; */
-    margin-top: 1.5rem;
-}
-
-.card-green .profile_pic{
-    border: #34a853 solid 4px;
+.event-card .event_pic{
     border-radius: 50%;
 }
 
-.card-green{
-    width: 15rem;
-    background-color: #cbf3cc;
-    text-align: center;
-    border-radius: 10px;
-    border: #cbf3cc solid 3px;
-    transition-property: transform,border;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in-out;
-    margin-bottom: 2rem;
-}
-
-.card-green:hover{
-    transform: scale(1.04);
-    border: #34a853 solid 3px;
-}
-
-.card-blue .profile_pic{
-    border: #4285f4 solid 4px;
-    border-radius: 50%;
-}
-
-.card-blue{
-    width: 15rem;
+.event-card{
     background-color: #c9e8ff;
     text-align: center;
     border-radius: 10px;
-    border: #c9e8ff solid 3px;
-    transition-property: transform,border;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in-out;
-    margin-bottom: 2rem;
-}
-
-.card-blue:hover{
-    transform: scale(1.04);
-    border: #4285f4 solid 3px;
-}
-
-.card-red .profile_pic{
-    border: #ea4335 solid 4px;
-    border-radius: 50%;
-}
-
-.card-red{
-    width: 15rem;
-    background-color: #ffcdd2;
+    border: none;
     text-align: center;
-    border-radius: 10px;
-    border: #ffcdd2 solid 3px;
-    transition-property: transform,border;
+    transition-property: transform,background-color;
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
+    margin-top: 1.5rem;
     margin-bottom: 2rem;
 }
 
-.card-red:hover{
+.event-card:hover{
     transform: scale(1.04);
-    border: #ea4335 solid 3px;
-}
-
-.social{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.social a{
-    font-size: 20px;
-    color: #363636;
-}
-
-.social a:hover{
-    color: #2156dd;
+    background-color: #90c4ec;
 }
 
 /*footer*/
@@ -153,6 +77,7 @@ ul{
 	list-style: none;
 }
 .footer{
+    margin-top: 5rem;
 	background-color: #24262b;
     padding: 2.2rem 0;
 }

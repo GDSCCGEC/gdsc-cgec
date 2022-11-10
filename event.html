@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Events</title>
     <!--Adding bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -13,9 +13,7 @@
     <!-- Adding Font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
-    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/event.css">
     <link rel="shortcut icon" href="images/gdsc logo 2.png" type="image/x-icon">
 </head>
 <body>
@@ -35,13 +33,13 @@
                 <a class="nav-link" href="index.html#animation" id="about-nav">ABOUT</a>
             </li>
             <li class="nav-items">
-                <a class="nav-link" href="event.html" id="events-nav">EVENTS</a>
+                <a class="nav-link active" href="event.html" id="events-nav">EVENTS</a>
             </li>
             <li class="nav-items">
                 <a class="nav-link" href="team.html" id="team-nav">TEAM</a>
             </li>
             <li class="nav-items">
-                <a class="nav-link active" href="contact.html" id="contact-nav">CONTACT</a>
+                <a class="nav-link" href="contact.html" id="contact-nav">CONTACT</a>
             </li>
           </div>
         </div>
@@ -53,46 +51,46 @@
     <div class="team-heading">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-4 colorG"></div>
-                <div class="col-md-4">
-                    <h3><b>CONTACT  US</b></h3>
+                <div class="col-md-5 colorG"></div>
+                <div class="col-md-2">
+                    <h3><b>EVENTS</b></h3>
                 </div>
-                <div class="col-md-4 colorY"></div>
+                <div class="col-md-5 colorY"></div>
             </div>
         </div>
     </div>
 
     <!-- main section -->
+    <h3 style="text-align: center;color:#3983fa;font-family: 'Poppins',sans-serif;">Past Events</h3>
+
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
-                <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_6iywfzg9.json" id="contact-animation"  background="transparent"  speed="1" loop  autoplay></lottie-player>
+            <div class="col-md-3 col-sm-6">
+                <div class="card event-card">
+                    <div class="card-body">
+                        <img class="event_pic" src="images/competeNcompose.png" width="130px" height="130px">
+                        <p style="margin-top: 0.5rem;">OCT 15, 2022<br><b>Hackathon</b></p>
+                        <p style="font-family: 'Poppins',sans-serif;"><b style="font-size: 1rem;">Compete N Compose</b><br>Coochbehar Government Engineering College</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6" style="display: flex;flex-direction:column;">
-                <h4 style="color: #727272;margin-bottom:1.5rem">Contact us for queries, collabs and others...</h4>
-                <form action="https://formspree.io/f/moqbyked"
-                method="POST" id="contact_form">
-                    
-                    <div class="form-group">
-                        <label for="inputEmail">Name</label>
-                        <input type="text" class="form-control" name="name" id="name" placeholder="Your full name" autocomplete="off" required>
+            <div class="col-md-3 col-sm-6">
+                <div class="card event-card">
+                    <div class="card-body">
+                        <img class="event_pic" src="images/info.png" width="130px" height="130px">
+                        <p style="margin-top: 0.5rem;">SEP 24, 2022<br><b>Info Session</b></p>
+                        <p style="font-family: 'Poppins',sans-serif;"><b style="font-size: 1rem;">Info Session</b><br>Coochbehar Government Engineering College</p>
                     </div>
-                    <div class="form-group">
-                        <label for="inputPassword">Email Address</label>
-                        <input type="email" class="form-control" name="email" id="email" placeholder="Your email address" autocomplete="off" required>
-                    </div>
-                    
-                    <div class="form-group">
-                    <label for="inputAddress">Your Message</label>
-                    <input type="text" class="form-control" name="message" id="inputMsg" placeholder="Type your message here..." autocomplete="off" required>
-                    </div>
-                    <div class="form_btn">
-                    <button type="submit" class="btn contact-btn">Submit</button>
-                    </div>
-                    
-                </form>
+                </div>
             </div>
+            <div class="col-md-3 col-sm-6"></div>
+            <div class="col-md-3 col-sm-6"></div>
         </div>
+    </div>
+
+    <h3 style="text-align: center;color:#3983fa;font-family: 'Poppins',sans-serif;">Upcoming Events</h3>
+    <div class="container">
+        <h5 style="color: #727272;margin-bottom: 2rem;margin-top: 2rem;"><i>To be announced...</i></h5>
     </div>
 
     <!-- footer -->
@@ -134,5 +132,6 @@
 
     </footer>
     <!-- Footer section end -->
+
 </body>
 </html>
