@@ -21,6 +21,10 @@
     <!-- Adding Font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
+
+    <!-- AOS animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- External Style sheet -->
     <link rel="stylesheet" href="style.css">
 
@@ -88,10 +92,10 @@
     <div class="about">
         <div class="container">
             <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-5" data-aos="fade-right">
                     <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_L72m3bQKrm.json" id="animation" background="transparent"  speed="1"  loop  autoplay></lottie-player>
                 </div>
-                <div class="col-md-7 about_text">
+                <div class="col-md-7 about_text" data-aos="fade-left">
                     <h3 id="about_head"> <img src="images/gdsc logo 2.png" width="50" height="35" style="padding-right:3px"> <b>ABOUT GDSC CGEC</b></h3>
                     <h5><b>Google Developers Student Clubs (GDSC)</b> is a community build for like-minded college and university students with an interest in Google developer technologies. The global initiative is aimed at providing a platform for undergraduate and graduate students to connect, learn and grow through various events and activities. Building and forming valuable connections in the process.<br>
 
@@ -113,7 +117,7 @@
         <div class="container">
             <h3><b>  Why Join Us </b></h3>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="zoom-in">
                     <div class="card card-connect" style="width: 18rem;box-shadow: 0 9px #ea4335;">
                         <div class="card-body">
                           <div class="card-title">
@@ -127,7 +131,7 @@
                         </div>
                       </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="zoom-in">
                     <div class="card card-learn" style="width: 18rem;box-shadow: 0 9px #FBBC04;">
                         <div class="card-body">
                             <div class="card-title">
@@ -141,7 +145,7 @@
                           </div>
                       </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="zoom-in">
                     <div class="card card-grow" style="width: 18rem;box-shadow: 0 9px #34A853;">
                         <div class="card-body">
                             <div class="card-title">
@@ -256,6 +260,15 @@
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
     </script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        offset:200,
+        duration:800
+    });
+  </script>
 </body>
 </html>
 
