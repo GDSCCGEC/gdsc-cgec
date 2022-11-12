@@ -289,7 +289,7 @@ lottie-player .animation{
     margin-top: 1.5rem;
     margin-bottom: 2rem;
     text-align: center;
-    height: 34rem;
+    height: 35rem;
     border-radius: 15px;
     border: none;
     transition-property: margin-top;
@@ -297,7 +297,7 @@ lottie-player .animation{
 }
 
 .whyjoinus .card:hover{
-    margin-top: 0;
+    margin-top: -1rem;
 }
 
 .whyjoinus .card h5{
@@ -324,6 +324,12 @@ lottie-player .animation{
     font-size: 2rem;
 }
 
+.sponsor .spn_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .faq{
     margin-top: 7rem;
     margin-bottom: 4rem;
@@ -338,6 +344,49 @@ lottie-player .animation{
 .faq .colorG{
     background-color: #4285f4;
 }
+
+#acc .accordion {
+    background-color: #ffffff;
+    color: #2e2e2e;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 15px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    border: none;
+    border: 2px solid #34a853;
+    text-align: left;
+    outline: none;
+    font-size: 1.1rem;
+    font-family: 'Poppins',sans-serif;
+    transition: 0.4s;
+  }
+  
+ #acc .active, .accordion:hover {
+    background-color: #cbf3cc;
+  }
+  
+ #acc .accordion:after {
+    content: '\002B';
+    color: #34a853;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+ #acc .active:after {
+    content: "\2212";
+  }
+  
+ #acc .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    text-align: left;
+  }
 
 @media (min-aspect-ratio: 16/9){
     .back_vd{
@@ -386,6 +435,7 @@ lottie-player .animation{
     }
     .content button{
         padding: 0.3rem 3.5rem;
+        font-size: 1.2rem;
     }
 
     .about .about_text{
@@ -393,6 +443,10 @@ lottie-player .animation{
         flex-direction: column;
         justify-content: center;
         text-align: center;
+    }
+
+    .whyjoinus .card{
+        height: auto;
     }
 
     .footer .col-md-3{
